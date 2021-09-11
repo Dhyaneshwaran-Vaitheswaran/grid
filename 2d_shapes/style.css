@@ -1,0 +1,28 @@
+body{
+  background-image: linear-gradient(to right, pink, violet, purple);
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border: 5px solid black;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+}
+
+.cell{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-weight: 900;
+  background-color: white;
+  outline: 5px solid black;
+}
